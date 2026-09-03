@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +15,11 @@ namespace WindowSystem.Files
 
         [SerializeField] private Image _icon;
         [SerializeField] private TMP_Text _name;
+
+        private void Awake()
+        {
+            _window.Hide();
+        }
 
         protected virtual void OnEnable()
         {

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580cb0e60d0642b1bd08bdc6a2d4bc82, type: 3}
+  m_Name: WindowConfig
+  m_EditorClassIdentifier: Assembly-CSharp::WindowSystem.Files.WindowConfig
+  _fileName: Penis
+  _icon: {fileID: -340379512, guid: 03eaf5a16ee7e174aa6b4580f3761c27, type: 3}
+  _taskbarIcon: {fileID: -340379512, guid: 03eaf5a16ee7e174aa6b4580f3761c27, type: 3}
