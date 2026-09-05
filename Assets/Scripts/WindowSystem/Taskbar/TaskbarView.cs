@@ -34,7 +34,7 @@ namespace WindowSystem.Taskbar
         {
             if(_registeredWindows.ContainsKey(window)) return;
             
-            TaskBarButton button = Instantiate(_taskBarButtonPrefab, _buttonsContainer.transform, _buttonsContainer);
+            TaskBarButton button = Instantiate(_taskBarButtonPrefab, _buttonsContainer.transform);
             button.SetWindow(window);
             button.SetIcon(window.Config.TaskbarIcon);
             

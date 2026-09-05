@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7450538238779357661}
   - component: {fileID: 2519398247633764129}
+  - component: {fileID: 7606624019239201900}
+  - component: {fileID: 8460801503348235868}
   m_Layer: 5
   m_Name: UpperPanel
   m_TagString: Untagged
@@ -36,8 +38,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2}
-  m_SizeDelta: {x: -4, y: 13}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 17}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2519398247633764129
 MonoBehaviour:
@@ -53,6 +55,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WindowSystem.WindowDragZone
   _windowRectTransform: {fileID: 1518678942442837404}
   _dragable: 1
+--- !u!222 &7606624019239201900
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900005821963709984}
+  m_CullTransparentMesh: 1
+--- !u!114 &8460801503348235868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900005821963709984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1692676954395148838
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: 0}
+  m_AnchoredPosition: {x: -18, y: 0}
   m_SizeDelta: {x: 11, y: 11}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &7403807203144372783
@@ -263,7 +303,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f8d1fff88c4fa7906c49033bf0e854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindowSystem.WindowView
+  _config: {fileID: 0}
   _closeButton: {fileID: 628987674824583308}
+  _hideButton: {fileID: 6183588473984746251}
   _title: {fileID: 4982846867696182017}
   _rectTransform: {fileID: 1518678942442837404}
 --- !u!1 &4708860176671652348
@@ -375,8 +417,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.5, y: 0.5}
-  m_SizeDelta: {x: -5, y: -5}
+  m_AnchoredPosition: {x: 1, y: 0}
+  m_SizeDelta: {x: -8, y: -6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8245346204768118401
 CanvasRenderer:
@@ -400,7 +442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -513,7 +555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 0}
+  m_AnchoredPosition: {x: -3, y: 0}
   m_SizeDelta: {x: 11, y: 11}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &3255659958153688515
